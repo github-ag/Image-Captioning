@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Captioning Project</title>
+</head>
+<body>
+	<h1>Image Captioning Project</h1>
+	<form method="POST" action="/" enctype="multipart/form-data">
+		<input type="file" name="userfile" placeholder="Enter image to be captioned" >
+		<input type="submit">
+		
+		{% if caption %}
+		<h2>{{caption}}</h2>
+		{% endif %}
+	</form>
+</body>
+</html>
